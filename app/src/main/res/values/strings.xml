@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">"Bike Catalog"</string>
+
+    <string name="login_text">Login :</string>
+    <string name="password_text">Password :</string>
+    <string name="login_button">Login</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="dialog_title">Whoops!</string>
+    <string name="login_dialog_message">Please enter username/password.</string>
+    <string name="title_activity_list">We\'ve got Bikes!</string>
+    <string name="title_activity_bike_details">Bike Details</string>
+    <string name="bike_label">Check out the  </string>
+    <string name="price_label">Only </string>
+    <string name="carton_button_text">Add to Cart! </string>
+</resources>

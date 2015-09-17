@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.aucutt.bikecatalog.activities.BikeDetailsActivity">
+
+
+   <LinearLayout
+       android:id="@+id/titleLayout"
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+
+
+
+       <TextView
+           android:id="@+id/detailslabel"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:textAppearance="?android:attr/textAppearanceLarge"/>
+   </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scroller"
+        android:layout_below="@+id/titleLayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/detailsimage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter" />
+
+
+            <TextView
+                android:id="@+id/detailstext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/detailsimage"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+
+            <Button
+                android:id="@+id/cartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailstext"
+                android:layout_centerVertical="true"
+                android:text="@string/carton_button_text"
+                android:onClick="onAddToCart"
+                android:textColor="#800000" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
